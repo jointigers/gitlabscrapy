@@ -15,7 +15,7 @@ class Gitlab(scrapy.Spider):
     def gen_urls(self):
 	urslist=[]
 	for i in range(1,43):
-		starturl="http://gitlab.puhuitech.cn/search?group_id=&page=%d&project_id=&repository_ref=&search=a&utf8=%s" %(i,'%E2%9C%93')
+		starturl="http://gitlab.xxx.cn/search?group_id=&page=%d&project_id=&repository_ref=&search=a&utf8=%s" %(i,'%E2%9C%93')
 		urslist.append(starturl)
 	return urslist
     def parse(self, response):
